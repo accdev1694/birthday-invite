@@ -11,14 +11,22 @@
       <div class="hero">
         <h1 class="heading">Gold's <span class="bday">Birthday</span></h1>
       </div>
-
-      <form action="">
+      <h2>Form</h2>
+      <div class="form-el"></div>
+      <form>
         <label for="name">What is your name? </label>
-        <input type="text" id="name" placeholder="John Smith" />
+        <input type="text" id="name" placeholder="John Smith" required maxlength="15"/>
         <label for="age">How Old are you? </label>
-        <input type="text" id="age" placeholder="12"/>
-        <input type="button" id="submit" value="SUBMIT" />
+        <input type="text" id="age" placeholder="12" required />
+        <input
+          onclick="submitForm()"
+          type="button"
+          id="submit"
+          value="SUBMIT"
+        />
       </form>
     </div>
+
+    <script src="./assets/js/scripts.js"></script>
   </body>
 </html>
