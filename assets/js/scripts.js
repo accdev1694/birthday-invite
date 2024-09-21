@@ -9,13 +9,14 @@ formEl.addEventListener("submit", function (event) {
     subHeadingEl.textContent = "fill in your age!";
     subHeadingEl.style.color = "red";
     formEl.textContent = "";
-  } else if (ageEl < 12 || ageEl > 50) {
+  } else if (ageEl < 6 || ageEl > 50) {
     subHeadingEl.textContent = "Can't Come!!!";
     subHeadingEl.style.color = "red";
     formEl.textContent = "";
   } else {
     let nameEl = document.getElementById("name").value;
-    subHeadingEl.textContent = `${nameEl}`;
+    subHeadingEl.textContent = `Welcome, to attend,\n${nameEl}`;
+    document.querySelector(".hero").style.marginTop = "80px";
     formEl.textContent = "";
   }
 });
